@@ -34,17 +34,17 @@ for(let i = 0; i <squaresNumber; i++){
 }
 
 
-function setColorToElement(element){
+setColorToElement = (element) => {
     const currentColor = getRandomColor();
     element.style.background = currentColor;
     element.style.boxShadow = `0 0 2px ${currentColor}, 0 0 10px ${currentColor}`;
 }
 
-function removeColorFromElement(element){
+removeColorFromElement = (element) => {
     element.style.background = "#576574";
     element.style.boxShadow = `0 0 2px #000`;
 }
 
-function getRandomColor(){
+getRandomColor = () => {
     return colors[Math.floor(Math.random() * colors.length)]
 }
