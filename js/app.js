@@ -33,7 +33,6 @@ for(let i = 0; i <squaresNumber; i++){
 
 }
 
-
 setColorToElement = (element) => {
     const currentColor = getRandomColor();
     element.style.background = currentColor;
