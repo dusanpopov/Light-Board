@@ -20,7 +20,6 @@ for(let i = 0; i <squaresNumber; i++){
 
     const square = document.createElement("div");
     square.classList.add("square");
-
     container.appendChild(square);
 
     square.addEventListener("mouseover", () => {
