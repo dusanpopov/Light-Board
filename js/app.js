@@ -1,5 +1,4 @@
 const container = document.querySelector(".container");
-
 const colors = [
     "#ffbe76",
     "#130f40",
@@ -13,7 +12,6 @@ const colors = [
     "#f1f2f6",
     "#d63031"
 ]
-
 const squaresNumber = 400;
 
 for(let i = 0; i <squaresNumber; i++){
