@@ -15,19 +15,16 @@ const colors = [
 const squaresNumber = 400;
 
 for(let i = 0; i <squaresNumber; i++){
+const square = document.createElement("div");
+square.classList.add("square");
+container.appendChild(square);
 
-    const square = document.createElement("div");
-    square.classList.add("square");
-    container.appendChild(square);
-
-    square.addEventListener("mouseover", () => {
+square.addEventListener("mouseover", () => {
         setColorToElement(square);
     });
-
-    square.addEventListener("mouseout", () => {
+square.addEventListener("mouseout", () => {
         removeColorFromElement(square);
     });
-
 }
 
 setColorToElement = (element) => {
